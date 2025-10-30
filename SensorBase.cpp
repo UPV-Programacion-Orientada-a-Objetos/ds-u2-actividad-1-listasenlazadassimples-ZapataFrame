@@ -1,4 +1,5 @@
 #include "SensorBase.h"
+#include <iostream>
 
 // Constructor
 SensorBase::SensorBase(const char *nom)
@@ -9,3 +10,7 @@ SensorBase::SensorBase(const char *nom)
 
 // Destructor
 SensorBase::~SensorBase(){}
+
+void SensorBase::printNombre(){
+    std::cout << this->nombre;
+}
