@@ -1,4 +1,5 @@
 #include "Nodo.h"
+#include <iostream>
 
 template <typename T>
 // interfaz
@@ -24,13 +25,14 @@ public:
             delete temp;
             temp = aux;
         }
-        this->cabeza=nullptr;
+        this->cabeza = nullptr;
     }
     void insertar(T valor);
     T encontrarMinimo();
     void eliminarValor(T valor);
-    T calcularPromedio();
+    double calcularPromedio();
     bool estaVacia();
+    void mostrarLista();
 };
 
 // implementacion
@@ -108,29 +110,42 @@ void ListaSensor<T>::eliminarValor(T valor)
 }
 
 template <typename T>
-T ListaSensor<T>::calcularPromedio()
+double ListaSensor<T>::calcularPromedio()
 {
-    // si la lista esta vacia
     if (this->cabeza == nullptr)
-        return T(); // alomejor throwear una exception
+        return 0.0; // alomejor throwear algo
 
     Nodo<T> *temp = this->cabeza;
-    int contador = 1;
-    T sumatoria = temp->valor;
+    int contador = 0;
+    double sumatoria = 0.0;
 
-    while (temp->siguiente != nullptr)
+    while (temp != nullptr)
     {
-        Nodo<T> *aux = temp->siguiente;
-        sumatoria += aux->valor;
+        sumatoria += (temp->valor);
         contador++;
         temp = temp->siguiente;
     }
 
-    T promedio = sumatoria / contador;
-    return promedio;
+    return sumatoria / contador;
 }
 
 template <typename T>
-bool ListaSensor<T>::estaVacia() {
+bool ListaSensor<T>::estaVacia()
+{
     return cabeza == nullptr;
+}
+
+template <typename T>
+void ListaSensor<T>::mostrarLista()
+{
+    if (this->cabeza == nullptr)
+        return;
+
+    Nodo<T> *temp = this->cabeza;
+    while (temp != nullptr)
+    {
+        std::cout << temp->valor << " ->";
+        temp = temp->siguiente;
+    }
+    std::cout << std::endl;
 }
