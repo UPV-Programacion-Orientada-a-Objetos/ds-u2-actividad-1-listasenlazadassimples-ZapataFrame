@@ -1,0 +1,26 @@
+# Carpeta de ejecutables
+build/
+
+# Archivos generados por CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+CMakeLists.txt.user
+
+# Archivos objeto y ejecutables
+*.o
+*.out
+*.exe
+ListasEnlazadasSimples
+
+# Archivos de IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
