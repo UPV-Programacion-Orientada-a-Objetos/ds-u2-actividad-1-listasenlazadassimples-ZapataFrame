@@ -1,0 +1,7 @@
+<map id="include/SensorPresion.h" name="include/SensorPresion.h">
+<area shape="rect" id="Node000001" title="Implementación de sensor de presión." alt="" coords="77,5,255,31"/>
+<area shape="rect" id="Node000002" href="$SensorPresion_8cpp.html" title="Implementación del sensor de presión." alt="" coords="5,79,169,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,42,102,80,98,76,141,38"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html" title="Programa principal del sistema IoT de monitoreo polimórfico." alt="" coords="193,79,299,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,38,235,76,231,80,187,42"/>
+</map>

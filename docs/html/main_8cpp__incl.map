@@ -1,0 +1,31 @@
+<map id="src/main.cpp" name="src/main.cpp">
+<area shape="rect" id="Node000001" title="Programa principal del sistema IoT de monitoreo polimórfico." alt="" coords="420,5,526,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="40,225,120,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="420,25,186,45,77,61,39,70,20,81,11,96,8,112,10,130,16,148,37,184,61,213,56,217,33,187,12,151,5,131,3,112,6,94,16,77,37,65,75,56,186,39,420,20"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="558,79,617,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="493,28,559,69,556,74,490,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="296,225,362,251"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="483,30,499,64,502,85,498,105,472,144,438,176,402,202,368,221,366,217,399,198,435,172,468,141,493,103,497,84,494,65,478,32"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="642,79,707,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="506,28,630,71,628,77,504,33"/>
+<area shape="rect" id="Node000006" href="$ListaGeneral_8h.html" title="Contenedor genérico de sensores (lista enlazada)." alt="" coords="367,79,483,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="467,33,442,69,438,66,463,30"/>
+<area shape="rect" id="Node000009" href="$SensorTemperatura_8h.html" title="Implementación de sensor de temperatura." alt="" coords="182,79,342,104"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="440,33,310,77,308,72,438,28"/>
+<area shape="rect" id="Node000011" href="$SensorPresion_8h.html" title="Implementación de sensor de presión." alt="" coords="31,79,158,104"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="420,32,169,79,168,74,419,27"/>
+<area shape="rect" id="Node000012" href="$ArduinoReader_8h_source.html" title=" " alt="" coords="731,79,860,104"/>
+<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="525,28,731,73,729,78,524,33"/>
+<area shape="rect" id="Node000007" href="$Nodo_8h.html" title="Nodo simple para listas enlazadas genéricas." alt="" coords="183,225,251,251"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="419,106,390,141,349,179,307,205,265,223,263,218,305,200,346,175,386,138,415,103"/>
+<area shape="rect" id="Node000008" href="$SensorBase_8h.html" title="Clase base abstracta para todos los sensores del sistema IoT." alt="" coords="224,152,335,177"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="403,106,316,148,314,144,400,102"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="290,176,315,213,311,216,286,179"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="268,104,276,138,271,140,262,105"/>
+<area shape="rect" id="Node000010" href="$ListaSensor_8h.html" title="Implementación de lista enlazada simple para lecturas de sensores." alt="" coords="75,152,183,177"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="242,106,164,148,161,143,240,102"/>
+<area shape="poly" id="edge13_Node000010_Node000002" title=" " alt="" coords="123,179,97,216,93,213,119,176"/>
+<area shape="poly" id="edge12_Node000010_Node000007" title=" " alt="" coords="145,175,194,214,190,219,141,179"/>
+<area shape="poly" id="edge15_Node000011_Node000008" title=" " alt="" coords="125,102,238,145,236,149,123,107"/>
+<area shape="poly" id="edge16_Node000011_Node000010" title=" " alt="" coords="102,103,120,138,115,141,98,106"/>
+</map>

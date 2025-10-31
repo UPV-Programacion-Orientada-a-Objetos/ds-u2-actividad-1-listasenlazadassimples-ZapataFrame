@@ -1,0 +1,9 @@
+<map id="include/ListaGeneral.h" name="include/ListaGeneral.h">
+<area shape="rect" id="Node000001" title="Contenedor genérico de sensores (lista enlazada)." alt="" coords="12,5,179,31"/>
+<area shape="rect" id="Node000002" href="$Nodo_8h.html" title="Nodo simple para listas enlazadas genéricas." alt="" coords="5,79,73,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,33,59,69,55,66,84,29"/>
+<area shape="rect" id="Node000003" href="$SensorBase_8h.html" title="Clase base abstracta para todos los sensores del sistema IoT." alt="" coords="97,79,208,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="107,29,137,66,133,70,103,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="119,152,186,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="155,104,155,138,150,138,150,104"/>
+</map>

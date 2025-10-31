@@ -1,0 +1,632 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sistema de Gestión Polimórfica de Sensores para IoT: Referencia del archivo src/main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Sistema de Gestión Polimórfica de Sensores para IoT
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del archivo main.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Programa principal del sistema IoT de monitoreo polimórfico.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &quot;<a class="el" href="ListaGeneral_8h_source.html">ListaGeneral.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="SensorTemperatura_8h_source.html">SensorTemperatura.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="SensorPresion_8h_source.html">SensorPresion.h</a>&quot;</code><br />
+<code>#include &quot;ArduinoReader.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependencias incluidas en main.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#asrc_2main_8cpp" alt=""/></div>
+<map name="asrc_2main_8cpp" id="asrc_2main_8cpp">
+<area shape="rect" title="Programa principal del sistema IoT de monitoreo polimórfico." alt="" coords="420,5,526,31"/>
+<area shape="rect" title=" " alt="" coords="40,225,120,251"/>
+<area shape="poly" title=" " alt="" coords="420,25,186,45,77,61,39,70,20,81,11,96,8,112,10,130,16,148,37,184,61,213,56,217,33,187,12,151,5,131,3,112,6,94,16,77,37,65,75,56,186,39,420,20"/>
+<area shape="rect" title=" " alt="" coords="558,79,617,104"/>
+<area shape="poly" title=" " alt="" coords="493,28,559,69,556,74,490,33"/>
+<area shape="rect" title=" " alt="" coords="296,225,362,251"/>
+<area shape="poly" title=" " alt="" coords="483,30,499,64,502,85,498,105,472,144,438,176,402,202,368,221,366,217,399,198,435,172,468,141,493,103,497,84,494,65,478,32"/>
+<area shape="rect" title=" " alt="" coords="642,79,707,104"/>
+<area shape="poly" title=" " alt="" coords="506,28,630,71,628,77,504,33"/>
+<area shape="rect" href="ListaGeneral_8h.html" title="Contenedor genérico de sensores (lista enlazada)." alt="" coords="367,79,483,104"/>
+<area shape="poly" title=" " alt="" coords="467,33,442,69,438,66,463,30"/>
+<area shape="rect" href="SensorTemperatura_8h.html" title="Implementación de sensor de temperatura." alt="" coords="182,79,342,104"/>
+<area shape="poly" title=" " alt="" coords="440,33,310,77,308,72,438,28"/>
+<area shape="rect" href="SensorPresion_8h.html" title="Implementación de sensor de presión." alt="" coords="31,79,158,104"/>
+<area shape="poly" title=" " alt="" coords="420,32,169,79,168,74,419,27"/>
+<area shape="rect" href="ArduinoReader_8h_source.html" title=" " alt="" coords="731,79,860,104"/>
+<area shape="poly" title=" " alt="" coords="525,28,731,73,729,78,524,33"/>
+<area shape="rect" href="Nodo_8h.html" title="Nodo simple para listas enlazadas genéricas." alt="" coords="183,225,251,251"/>
+<area shape="poly" title=" " alt="" coords="419,106,390,141,349,179,307,205,265,223,263,218,305,200,346,175,386,138,415,103"/>
+<area shape="rect" href="SensorBase_8h.html" title="Clase base abstracta para todos los sensores del sistema IoT." alt="" coords="224,152,335,177"/>
+<area shape="poly" title=" " alt="" coords="403,106,316,148,314,144,400,102"/>
+<area shape="poly" title=" " alt="" coords="290,176,315,213,311,216,286,179"/>
+<area shape="poly" title=" " alt="" coords="268,104,276,138,271,140,262,105"/>
+<area shape="rect" href="ListaSensor_8h.html" title="Implementación de lista enlazada simple para lecturas de sensores." alt="" coords="75,152,183,177"/>
+<area shape="poly" title=" " alt="" coords="242,106,164,148,161,143,240,102"/>
+<area shape="poly" title=" " alt="" coords="123,179,97,216,93,213,119,176"/>
+<area shape="poly" title=" " alt="" coords="145,175,194,214,190,219,141,179"/>
+<area shape="poly" title=" " alt="" coords="125,102,238,145,236,149,123,107"/>
+<area shape="poly" title=" " alt="" coords="102,103,120,138,115,141,98,106"/>
+</map>
+</div>
+</div>
+<p><a href="main_8cpp_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a0f8ee7e3d10f303461036dc8b83f974f" id="r_a0f8ee7e3d10f303461036dc8b83f974f"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="classNodo.html">typename</a> <a class="el" href="classNodo.html">T</a> &gt; </td></tr>
+<tr class="memitem:a0f8ee7e3d10f303461036dc8b83f974f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classNodo.html">T</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a0f8ee7e3d10f303461036dc8b83f974f">getInput</a> (<a class="el" href="classNodo.html">const</a> <a class="el" href="classNodo.html">char</a> *<a class="el" href="classNodo.html">prompt</a>)</td></tr>
+<tr class="separator:a0f8ee7e3d10f303461036dc8b83f974f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf99b0261f0b49e1c1d6ac14611e4cc" id="r_aedf99b0261f0b49e1c1d6ac14611e4cc"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:aedf99b0261f0b49e1c1d6ac14611e4cc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classNodo.html">const</a> <a class="el" href="classNodo.html">char</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aedf99b0261f0b49e1c1d6ac14611e4cc">getInput</a> (<a class="el" href="classNodo.html">const</a> <a class="el" href="classNodo.html">char</a> *<a class="el" href="classNodo.html">prompt</a>)</td></tr>
+<tr class="separator:aedf99b0261f0b49e1c1d6ac14611e4cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af20872a5edc0026d0c5a205901dd604e" id="r_af20872a5edc0026d0c5a205901dd604e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNodo.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#af20872a5edc0026d0c5a205901dd604e">get_menu_option</a> ()</td></tr>
+<tr class="separator:af20872a5edc0026d0c5a205901dd604e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae91d4cbee2dab64187187499dd0eecd4" id="r_ae91d4cbee2dab64187187499dd0eecd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNodo.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae91d4cbee2dab64187187499dd0eecd4">print_menu</a> ()</td></tr>
+<tr class="separator:ae91d4cbee2dab64187187499dd0eecd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a980c7a9d0b3ab886dc80f63ab455d69a" id="r_a980c7a9d0b3ab886dc80f63ab455d69a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNodo.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a980c7a9d0b3ab886dc80f63ab455d69a">crearSensorTemperatura</a> (<a class="el" href="classListaGeneral.html">ListaGeneral</a> *<a class="el" href="classNodo.html">lista</a>)</td></tr>
+<tr class="separator:a980c7a9d0b3ab886dc80f63ab455d69a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a206b0316a772cda63466c9c1f41f1d87" id="r_a206b0316a772cda63466c9c1f41f1d87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNodo.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a206b0316a772cda63466c9c1f41f1d87">crearSensorPresion</a> (<a class="el" href="classListaGeneral.html">ListaGeneral</a> *<a class="el" href="classNodo.html">lista</a>)</td></tr>
+<tr class="separator:a206b0316a772cda63466c9c1f41f1d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3627236b798efdc95c15db24ac7c410a" id="r_a3627236b798efdc95c15db24ac7c410a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNodo.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a3627236b798efdc95c15db24ac7c410a">registrarLectura</a> (<a class="el" href="classListaGeneral.html">ListaGeneral</a> *<a class="el" href="classNodo.html">lista</a>)</td></tr>
+<tr class="separator:a3627236b798efdc95c15db24ac7c410a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac43bc600fb6be8d53bf2a939389e896c" id="r_ac43bc600fb6be8d53bf2a939389e896c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNodo.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ac43bc600fb6be8d53bf2a939389e896c">registrarLecturaManual</a> (<a class="el" href="classListaGeneral.html">ListaGeneral</a> *<a class="el" href="classNodo.html">lista</a>)</td></tr>
+<tr class="separator:ac43bc600fb6be8d53bf2a939389e896c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNodo.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf99b0261f0b49e1c1d6ac14611e4cc" id="r_aedf99b0261f0b49e1c1d6ac14611e4cc"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:aedf99b0261f0b49e1c1d6ac14611e4cc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classNodo.html">const</a> <a class="el" href="classNodo.html">char</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aedf99b0261f0b49e1c1d6ac14611e4cc">getInput</a> (<a class="el" href="classNodo.html">const</a> <a class="el" href="classNodo.html">char</a> *<a class="el" href="classNodo.html">prompt</a>)</td></tr>
+<tr class="separator:aedf99b0261f0b49e1c1d6ac14611e4cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Programa principal del sistema IoT de monitoreo polimórfico. </p>
+<p>Implementa un menú interactivo para crear sensores, registrar lecturas desde Arduino o manualmente, y ejecutar procesamiento polimórfico sobre la lista de sensores. Demuestra el uso de herencia, polimorfismo y gestión dinámica de memoria.</p>
+<dl class="section author"><dt>Autor</dt><dd>ZapataFrame </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>2025-10-30 </dd></dl>
+
+<p class="definition">Definición en el archivo <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+</div><h2 class="groupheader">Documentación de funciones</h2>
+<a id="a206b0316a772cda63466c9c1f41f1d87" name="a206b0316a772cda63466c9c1f41f1d87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a206b0316a772cda63466c9c1f41f1d87">&#9670;&#160;</a></span>crearSensorPresion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNodo.html">void</a> crearSensorPresion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classListaGeneral.html">ListaGeneral</a> *&#160;</td>
+          <td class="paramname"><em>lista</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="main_8cpp_source.html#l00106">106</a> del archivo <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  107</span>{</div>
+<div class="line"><span class="lineno">  108</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* nombre = <a class="code hl_class" href="classNodo.html">getInput&lt;const char*&gt;</a>(<span class="stringliteral">&quot;Nombre del sensor: &quot;</span>);</div>
+<div class="line"><span class="lineno">  109</span>    <a class="code hl_class" href="classSensorBase.html">SensorBase</a>* <a class="code hl_class" href="classNodo.html">nuevoSensor</a> = <span class="keyword">new</span> <a class="code hl_class" href="classSensorPresion.html">SensorPresion</a>(nombre);</div>
+<div class="line"><span class="lineno">  110</span>    <a class="code hl_class" href="classNodo.html">lista</a>-&gt;insertar(<a class="code hl_class" href="classNodo.html">nuevoSensor</a>);</div>
+<div class="line"><span class="lineno">  111</span>    <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sensor &#39;&quot;</span> &lt;&lt; nombre &lt;&lt; <span class="stringliteral">&quot;&#39; creado e insertado en la lista de gestion.&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">  112</span>}</div>
+<div class="ttc" id="aclassNodo_html"><div class="ttname"><a href="classNodo.html">Nodo</a></div><div class="ttdef"><b>Definition</b> <a href="Nodo_8h_source.html#l00015">Nodo.h:16</a></div></div>
+<div class="ttc" id="aclassNodo_html_a96da8b61d6884126bb04fced32542df9"><div class="ttname"><a href="classNodo.html#a96da8b61d6884126bb04fced32542df9">Nodo::Nodo</a></div><div class="ttdeci">Nodo(T valor)</div><div class="ttdef"><b>Definition</b> <a href="Nodo_8h_source.html#l00025">Nodo.h:25</a></div></div>
+<div class="ttc" id="aclassSensorBase_html"><div class="ttname"><a href="classSensorBase.html">SensorBase</a></div><div class="ttdef"><b>Definition</b> <a href="SensorBase_8h_source.html#l00019">SensorBase.h:20</a></div></div>
+<div class="ttc" id="aclassSensorPresion_html"><div class="ttname"><a href="classSensorPresion.html">SensorPresion</a></div><div class="ttdef"><b>Definition</b> <a href="SensorPresion_8h_source.html#l00015">SensorPresion.h:16</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a980c7a9d0b3ab886dc80f63ab455d69a" name="a980c7a9d0b3ab886dc80f63ab455d69a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a980c7a9d0b3ab886dc80f63ab455d69a">&#9670;&#160;</a></span>crearSensorTemperatura()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNodo.html">void</a> crearSensorTemperatura </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classListaGeneral.html">ListaGeneral</a> *&#160;</td>
+          <td class="paramname"><em>lista</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="main_8cpp_source.html#l00098">98</a> del archivo <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   99</span>{</div>
+<div class="line"><span class="lineno">  100</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* nombre = <a class="code hl_class" href="classNodo.html">getInput&lt;const char*&gt;</a>(<span class="stringliteral">&quot;Nombre del sensor: &quot;</span>);</div>
+<div class="line"><span class="lineno">  101</span>    <a class="code hl_class" href="classSensorBase.html">SensorBase</a>* <a class="code hl_class" href="classNodo.html">nuevoSensor</a> = <span class="keyword">new</span> <a class="code hl_class" href="classSensorTemperatura.html">SensorTemperatura</a>(nombre);</div>
+<div class="line"><span class="lineno">  102</span>    <a class="code hl_class" href="classNodo.html">lista</a>-&gt;insertar(<a class="code hl_class" href="classNodo.html">nuevoSensor</a>);</div>
+<div class="line"><span class="lineno">  103</span>    <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sensor &#39;&quot;</span> &lt;&lt; nombre &lt;&lt; <span class="stringliteral">&quot;&#39; creado e insertado en la lista de gestion.&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">  104</span>}</div>
+<div class="ttc" id="aclassSensorTemperatura_html"><div class="ttname"><a href="classSensorTemperatura.html">SensorTemperatura</a></div><div class="ttdef"><b>Definition</b> <a href="SensorTemperatura_8h_source.html#l00016">SensorTemperatura.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af20872a5edc0026d0c5a205901dd604e" name="af20872a5edc0026d0c5a205901dd604e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af20872a5edc0026d0c5a205901dd604e">&#9670;&#160;</a></span>get_menu_option()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNodo.html">int</a> get_menu_option </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="main_8cpp_source.html#l00224">224</a> del archivo <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  225</span>{</div>
+<div class="line"><span class="lineno">  226</span>    <span class="keywordtype">bool</span> <a class="code hl_class" href="classNodo.html">isValidOption</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  227</span>    <span class="keywordtype">int</span> <a class="code hl_class" href="classNodo.html">opt</a>;</div>
+<div class="line"><span class="lineno">  228</span>    <span class="keywordflow">do</span></div>
+<div class="line"><span class="lineno">  229</span>    {</div>
+<div class="line"><span class="lineno">  230</span>        print_menu();</div>
+<div class="line"><span class="lineno">  231</span>        <a class="code hl_class" href="classNodo.html">opt</a> = <a class="code hl_class" href="classNodo.html">getInput&lt;int&gt;</a>(<span class="stringliteral">&quot;Seleccione una opcion: &quot;</span>);</div>
+<div class="line"><span class="lineno">  232</span>        <span class="keywordflow">if</span> (<a class="code hl_class" href="classNodo.html">opt &lt; 1 || opt &gt;</a> 6)</div>
+<div class="line"><span class="lineno">  233</span>        {</div>
+<div class="line"><span class="lineno">  234</span>            <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;[Error] Opcion invalida. Intente nuevamente.&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">  235</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  236</span>        }</div>
+<div class="line"><span class="lineno">  237</span>        <a class="code hl_class" href="classNodo.html">isValidOption</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  238</span>    } <span class="keywordflow">while</span> (!<a class="code hl_class" href="classNodo.html">isValidOption</a>);</div>
+<div class="line"><span class="lineno">  239</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classNodo.html">opt</a>;</div>
+<div class="line"><span class="lineno">  240</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aedf99b0261f0b49e1c1d6ac14611e4cc" name="aedf99b0261f0b49e1c1d6ac14611e4cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedf99b0261f0b49e1c1d6ac14611e4cc">&#9670;&#160;</a></span>getInput() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNodo.html">const</a> <a class="el" href="classNodo.html">char</a> * getInput </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNodo.html">const</a> <a class="el" href="classNodo.html">char</a> *&#160;</td>
+          <td class="paramname"><em>prompt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="main_8cpp_source.html#l00273">273</a> del archivo <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  274</span>{</div>
+<div class="line"><span class="lineno">  275</span>    <span class="keyword">static</span> <span class="keywordtype">char</span> <a class="code hl_class" href="classNodo.html">buffer</a>[50];</div>
+<div class="line"><span class="lineno">  276</span>    <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <a class="code hl_class" href="classNodo.html">prompt</a>;</div>
+<div class="line"><span class="lineno">  277</span>    <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cin</a>.getline(<a class="code hl_class" href="classNodo.html">buffer</a>, 50);</div>
+<div class="line"><span class="lineno">  278</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classNodo.html">buffer</a>;</div>
+<div class="line"><span class="lineno">  279</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0f8ee7e3d10f303461036dc8b83f974f" name="a0f8ee7e3d10f303461036dc8b83f974f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f8ee7e3d10f303461036dc8b83f974f">&#9670;&#160;</a></span>getInput() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classNodo.html">typename</a> <a class="el" href="classNodo.html">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNodo.html">T</a> getInput </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNodo.html">const</a> <a class="el" href="classNodo.html">char</a> *&#160;</td>
+          <td class="paramname"><em>prompt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="main_8cpp_source.html#l00257">257</a> del archivo <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  258</span>{</div>
+<div class="line"><span class="lineno">  259</span>    <a class="code hl_class" href="classNodo.html">T</a> <a class="code hl_class" href="classNodo.html">input</a>;</div>
+<div class="line"><span class="lineno">  260</span>    <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <a class="code hl_class" href="classNodo.html">prompt</a>;</div>
+<div class="line"><span class="lineno">  261</span>    <span class="keywordflow">while</span> (!(<a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cin</a> &gt;&gt; <a class="code hl_class" href="classNodo.html">input</a>))</div>
+<div class="line"><span class="lineno">  262</span>    {</div>
+<div class="line"><span class="lineno">  263</span>        <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Entrada invalida.&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">  264</span>        <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cin</a>.clear();</div>
+<div class="line"><span class="lineno">  265</span>        <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cin</a>.ignore(std::numeric_limits&lt;std::streamsize&gt;::max(), <span class="charliteral">&#39;\n&#39;</span>);</div>
+<div class="line"><span class="lineno">  266</span>        <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <a class="code hl_class" href="classNodo.html">prompt</a>;</div>
+<div class="line"><span class="lineno">  267</span>    }</div>
+<div class="line"><span class="lineno">  268</span>    <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cin</a>.ignore(std::numeric_limits&lt;std::streamsize&gt;::max(), <span class="charliteral">&#39;\n&#39;</span>);</div>
+<div class="line"><span class="lineno">  269</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classNodo.html">input</a>;</div>
+<div class="line"><span class="lineno">  270</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aedf99b0261f0b49e1c1d6ac14611e4cc" name="aedf99b0261f0b49e1c1d6ac14611e4cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedf99b0261f0b49e1c1d6ac14611e4cc">&#9670;&#160;</a></span>getInput() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNodo.html">const</a> <a class="el" href="classNodo.html">char</a> * getInput </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNodo.html">const</a> <a class="el" href="classNodo.html">char</a> *&#160;</td>
+          <td class="paramname"><em>prompt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="main_8cpp_source.html#l00273">273</a> del archivo <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  274</span>{</div>
+<div class="line"><span class="lineno">  275</span>    <span class="keyword">static</span> <span class="keywordtype">char</span> <a class="code hl_class" href="classNodo.html">buffer</a>[50];</div>
+<div class="line"><span class="lineno">  276</span>    <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <a class="code hl_class" href="classNodo.html">prompt</a>;</div>
+<div class="line"><span class="lineno">  277</span>    <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cin</a>.getline(<a class="code hl_class" href="classNodo.html">buffer</a>, 50);</div>
+<div class="line"><span class="lineno">  278</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classNodo.html">buffer</a>;</div>
+<div class="line"><span class="lineno">  279</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNodo.html">int</a> main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="main_8cpp_source.html#l00036">36</a> del archivo <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   37</span>{</div>
+<div class="line"><span class="lineno">   38</span>    <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n========================================&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">   39</span>    <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;   Sistema IoT de Monitoreo Polimorfico&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">   40</span>    <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;========================================\n&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">   41</span>    </div>
+<div class="line"><span class="lineno">   42</span>    <a class="code hl_class" href="classListaGeneral.html">ListaGeneral</a>* <a class="code hl_class" href="classNodo.html">listaSensores</a> = <span class="keyword">new</span> <a class="code hl_class" href="classListaGeneral.html">ListaGeneral</a>();</div>
+<div class="line"><span class="lineno">   43</span>    </div>
+<div class="line"><span class="lineno">   44</span>    <span class="keywordtype">bool</span> <a class="code hl_class" href="classNodo.html">isProgramRunning</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   45</span>    </div>
+<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">while</span> (<a class="code hl_class" href="classNodo.html">isProgramRunning</a>)</div>
+<div class="line"><span class="lineno">   47</span>    {</div>
+<div class="line"><span class="lineno">   48</span>        <span class="keywordtype">int</span> <a class="code hl_class" href="classNodo.html">opt</a> = get_menu_option();</div>
+<div class="line"><span class="lineno">   49</span>        <span class="keywordflow">switch</span> (<a class="code hl_class" href="classNodo.html">opt</a>)</div>
+<div class="line"><span class="lineno">   50</span>        {</div>
+<div class="line"><span class="lineno">   51</span>            <span class="keywordflow">case</span> 1:</div>
+<div class="line"><span class="lineno">   52</span>            {</div>
+<div class="line"><span class="lineno">   53</span>                <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nOpcion 1: Crear Sensor (Tipo Temp - FLOAT)&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">   54</span>                crearSensorTemperatura(<a class="code hl_class" href="classNodo.html">listaSensores</a>);</div>
+<div class="line"><span class="lineno">   55</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   56</span>            }</div>
+<div class="line"><span class="lineno">   57</span>            <span class="keywordflow">case</span> 2:</div>
+<div class="line"><span class="lineno">   58</span>            {</div>
+<div class="line"><span class="lineno">   59</span>                <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nOpcion 2: Crear Sensor (Tipo Presion - INT)&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">   60</span>                crearSensorPresion(<a class="code hl_class" href="classNodo.html">listaSensores</a>);</div>
+<div class="line"><span class="lineno">   61</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   62</span>            }</div>
+<div class="line"><span class="lineno">   63</span>            <span class="keywordflow">case</span> 3:</div>
+<div class="line"><span class="lineno">   64</span>            {</div>
+<div class="line"><span class="lineno">   65</span>                <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nOpcion 3: Registrar Lectura&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">   66</span>                registrarLectura(<a class="code hl_class" href="classNodo.html">listaSensores</a>);</div>
+<div class="line"><span class="lineno">   67</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   68</span>            }</div>
+<div class="line"><span class="lineno">   69</span>            <span class="keywordflow">case</span> 4:</div>
+<div class="line"><span class="lineno">   70</span>            {</div>
+<div class="line"><span class="lineno">   71</span>                <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nOpcion 4: Ejecutar Procesamiento Polimorfico&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">   72</span>                <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n--- Ejecutando Polimorfismo ---&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">   73</span>                <a class="code hl_class" href="classNodo.html">listaSensores</a>-&gt;procesarTodos();</div>
+<div class="line"><span class="lineno">   74</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   75</span>            }</div>
+<div class="line"><span class="lineno">   76</span>            <span class="keywordflow">case</span> 5:</div>
+<div class="line"><span class="lineno">   77</span>            {</div>
+<div class="line"><span class="lineno">   78</span>                <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nOpcion 5: Cerrar Sistema (Liberar Memoria)&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">   79</span>                <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n--- Liberacion de Memoria en Cascada ---&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">   80</span>                <a class="code hl_class" href="classNodo.html">isProgramRunning</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   81</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   82</span>            }</div>
+<div class="line"><span class="lineno">   83</span>            <span class="keywordflow">case</span> 6:</div>
+<div class="line"><span class="lineno">   84</span>            {</div>
+<div class="line"><span class="lineno">   85</span>                <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\nOpcion 6: Registro Manual de Lectura&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">   86</span>                registrarLecturaManual(<a class="code hl_class" href="classNodo.html">listaSensores</a>);</div>
+<div class="line"><span class="lineno">   87</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   88</span>            }</div>
+<div class="line"><span class="lineno">   89</span>        }</div>
+<div class="line"><span class="lineno">   90</span>    }</div>
+<div class="line"><span class="lineno">   91</span>    </div>
+<div class="line"><span class="lineno">   92</span>    <span class="keyword">delete</span> <a class="code hl_class" href="classNodo.html">listaSensores</a>;</div>
+<div class="line"><span class="lineno">   93</span>    <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Sistema cerrado. Memoria limpia.&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">   94</span>    </div>
+<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   96</span>}</div>
+<div class="ttc" id="aclassListaGeneral_html"><div class="ttname"><a href="classListaGeneral.html">ListaGeneral</a></div><div class="ttdef"><b>Definition</b> <a href="ListaGeneral_8h_source.html#l00016">ListaGeneral.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae91d4cbee2dab64187187499dd0eecd4" name="ae91d4cbee2dab64187187499dd0eecd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae91d4cbee2dab64187187499dd0eecd4">&#9670;&#160;</a></span>print_menu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNodo.html">void</a> print_menu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="main_8cpp_source.html#l00242">242</a> del archivo <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  243</span>{</div>
+<div class="line"><span class="lineno">  244</span>    <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;\n========================================&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">  245</span>    <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;            MENU PRINCIPAL              &quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">  246</span>    <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;========================================&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">  247</span>    <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot; [1] Crear Sensor (Temperatura - FLOAT)&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">  248</span>    <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot; [2] Crear Sensor (Presion - INT)&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">  249</span>    <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot; [3] Registrar Lectura (Arduino)&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">  250</span>    <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot; [4] Ejecutar Procesamiento Polimorfico&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">  251</span>    <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot; [5] Cerrar Sistema&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">  252</span>    <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot; [6] Registro Manual de Lectura&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">  253</span>    <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;========================================&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">  254</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3627236b798efdc95c15db24ac7c410a" name="a3627236b798efdc95c15db24ac7c410a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3627236b798efdc95c15db24ac7c410a">&#9670;&#160;</a></span>registrarLectura()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNodo.html">void</a> registrarLectura </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classListaGeneral.html">ListaGeneral</a> *&#160;</td>
+          <td class="paramname"><em>lista</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="main_8cpp_source.html#l00114">114</a> del archivo <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  115</span>{</div>
+<div class="line"><span class="lineno">  116</span>    <span class="keywordflow">if</span> (<a class="code hl_class" href="classNodo.html">lista</a>-&gt;estaVacia())</div>
+<div class="line"><span class="lineno">  117</span>    {</div>
+<div class="line"><span class="lineno">  118</span>        <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;[Error] No hay sensores en el sistema.&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">  119</span>        <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;[Info] Agregue el Sensor de temperatura &#39;T-001&#39; y el de Presion &#39;P-105&#39;.&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">  120</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  121</span>    }</div>
+<div class="line"><span class="lineno">  122</span>    </div>
+<div class="line"><span class="lineno">  123</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* puerto = <span class="stringliteral">&quot;/dev/ttyUSB0&quot;</span>;</div>
+<div class="line"><span class="lineno">  124</span>    </div>
+<div class="line"><span class="lineno">  125</span>    <a class="code hl_class" href="classArduinoReader.html">ArduinoReader</a>* <a class="code hl_class" href="classNodo.html">arduino</a> = <span class="keyword">new</span> <a class="code hl_class" href="classArduinoReader.html">ArduinoReader</a>(puerto);</div>
+<div class="line"><span class="lineno">  126</span>    </div>
+<div class="line"><span class="lineno">  127</span>    <span class="keywordflow">if</span> (!<a class="code hl_class" href="classNodo.html">arduino</a>-&gt;estaConectado())</div>
+<div class="line"><span class="lineno">  128</span>    {</div>
+<div class="line"><span class="lineno">  129</span>        <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;[Error] No se pudo conectar al Arduino.&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">  130</span>        <span class="keyword">delete</span> <a class="code hl_class" href="classNodo.html">arduino</a>;</div>
+<div class="line"><span class="lineno">  131</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  132</span>    }</div>
+<div class="line"><span class="lineno">  133</span>    </div>
+<div class="line"><span class="lineno">  134</span>    <span class="keywordtype">char</span> <a class="code hl_class" href="classNodo.html">buffer</a>[100];</div>
+<div class="line"><span class="lineno">  135</span>    <span class="keywordtype">int</span> <a class="code hl_class" href="classNodo.html">lecturas</a> = 0;</div>
+<div class="line"><span class="lineno">  136</span>    </div>
+<div class="line"><span class="lineno">  137</span>    <span class="comment">// 2 CADA UNA</span></div>
+<div class="line"><span class="lineno">  138</span>    <span class="keywordflow">while</span> (<a class="code hl_class" href="classNodo.html">lecturas</a> &lt; 4)</div>
+<div class="line"><span class="lineno">  139</span>    {</div>
+<div class="line"><span class="lineno">  140</span>        <span class="keywordflow">if</span> (<a class="code hl_class" href="classNodo.html">arduino</a>-&gt;leerLinea(<a class="code hl_class" href="classNodo.html">buffer</a>, <span class="keyword">sizeof</span>(<a class="code hl_class" href="classNodo.html">buffer</a>)))</div>
+<div class="line"><span class="lineno">  141</span>        {</div>
+<div class="line"><span class="lineno">  142</span>            <span class="keywordflow">if</span> (<a class="code hl_class" href="classNodo.html">strcmp</a>(<a class="code hl_class" href="classNodo.html">buffer</a>, <span class="stringliteral">&quot;ARDUINO_READY&quot;</span>) == 0)</div>
+<div class="line"><span class="lineno">  143</span>            {</div>
+<div class="line"><span class="lineno">  144</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  145</span>            }</div>
+<div class="line"><span class="lineno">  146</span>            </div>
+<div class="line"><span class="lineno">  147</span>            <span class="keywordtype">char</span>* <a class="code hl_class" href="classNodo.html">coma</a> = <a class="code hl_class" href="classNodo.html">strchr</a>(<a class="code hl_class" href="classNodo.html">buffer</a>, <span class="charliteral">&#39;,&#39;</span>);</div>
+<div class="line"><span class="lineno">  148</span>            <span class="keywordflow">if</span> (<a class="code hl_class" href="classNodo.html">coma</a> == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  149</span>            {</div>
+<div class="line"><span class="lineno">  150</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  151</span>            }</div>
+<div class="line"><span class="lineno">  152</span>            </div>
+<div class="line"><span class="lineno">  153</span>            *<a class="code hl_class" href="classNodo.html">coma</a> = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><span class="lineno">  154</span>            <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keywordtype">id</span> = <a class="code hl_class" href="classNodo.html">buffer</a>;</div>
+<div class="line"><span class="lineno">  155</span>            <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_class" href="classNodo.html">valorStr</a> = <a class="code hl_class" href="classNodo.html">coma</a> + 1;</div>
+<div class="line"><span class="lineno">  156</span>            </div>
+<div class="line"><span class="lineno">  157</span>            <a class="code hl_class" href="classSensorBase.html">SensorBase</a>* <a class="code hl_class" href="classNodo.html">sensor</a> = <a class="code hl_class" href="classNodo.html">lista</a>-&gt;buscarPorNombre(<span class="keywordtype">id</span>);</div>
+<div class="line"><span class="lineno">  158</span>            </div>
+<div class="line"><span class="lineno">  159</span>            <span class="keywordflow">if</span> (<a class="code hl_class" href="classNodo.html">sensor</a> == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  160</span>            {</div>
+<div class="line"><span class="lineno">  161</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  162</span>            }</div>
+<div class="line"><span class="lineno">  163</span>            </div>
+<div class="line"><span class="lineno">  164</span>            <a class="code hl_class" href="classSensorTemperatura.html">SensorTemperatura</a>* <a class="code hl_class" href="classNodo.html">sensorTemp</a> = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="classSensorTemperatura.html">SensorTemperatura</a>*<span class="keyword">&gt;</span>(<a class="code hl_class" href="classNodo.html">sensor</a>);</div>
+<div class="line"><span class="lineno">  165</span>            <span class="keywordflow">if</span> (<a class="code hl_class" href="classNodo.html">sensorTemp</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  166</span>            {</div>
+<div class="line"><span class="lineno">  167</span>                <span class="keywordtype">float</span> valor = <a class="code hl_class" href="classNodo.html">atof</a>(<a class="code hl_class" href="classNodo.html">valorStr</a>);</div>
+<div class="line"><span class="lineno">  168</span>                <a class="code hl_class" href="classNodo.html">sensorTemp</a>-&gt;agregarLectura(valor);</div>
+<div class="line"><span class="lineno">  169</span>                <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;ID: &quot;</span> &lt;&lt; <span class="keywordtype">id</span> &lt;&lt; <span class="stringliteral">&quot;. Valor: &quot;</span> &lt;&lt; valor &lt;&lt; <span class="stringliteral">&quot; (float)&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">  170</span>                <a class="code hl_class" href="classNodo.html">lecturas</a>++;</div>
+<div class="line"><span class="lineno">  171</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  172</span>            }</div>
+<div class="line"><span class="lineno">  173</span>            </div>
+<div class="line"><span class="lineno">  174</span>            <a class="code hl_class" href="classSensorPresion.html">SensorPresion</a>* <a class="code hl_class" href="classNodo.html">sensorPres</a> = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="classSensorPresion.html">SensorPresion</a>*<span class="keyword">&gt;</span>(<a class="code hl_class" href="classNodo.html">sensor</a>);</div>
+<div class="line"><span class="lineno">  175</span>            <span class="keywordflow">if</span> (<a class="code hl_class" href="classNodo.html">sensorPres</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  176</span>            {</div>
+<div class="line"><span class="lineno">  177</span>                <span class="keywordtype">int</span> valor = <a class="code hl_class" href="classNodo.html">atoi</a>(<a class="code hl_class" href="classNodo.html">valorStr</a>);</div>
+<div class="line"><span class="lineno">  178</span>                <a class="code hl_class" href="classNodo.html">sensorPres</a>-&gt;agregarLectura(valor);</div>
+<div class="line"><span class="lineno">  179</span>                <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;ID: &quot;</span> &lt;&lt; <span class="keywordtype">id</span> &lt;&lt; <span class="stringliteral">&quot;. Valor: &quot;</span> &lt;&lt; valor &lt;&lt; <span class="stringliteral">&quot; (int)&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">  180</span>                <a class="code hl_class" href="classNodo.html">lecturas</a>++;</div>
+<div class="line"><span class="lineno">  181</span>            }</div>
+<div class="line"><span class="lineno">  182</span>        }</div>
+<div class="line"><span class="lineno">  183</span>    }</div>
+<div class="line"><span class="lineno">  184</span>    </div>
+<div class="line"><span class="lineno">  185</span>    <span class="keyword">delete</span> <a class="code hl_class" href="classNodo.html">arduino</a>;</div>
+<div class="line"><span class="lineno">  186</span>}</div>
+<div class="ttc" id="aclassArduinoReader_html"><div class="ttname"><a href="classArduinoReader.html">ArduinoReader</a></div><div class="ttdoc">Clase para lectura de puerto serial (Arduino) sin usar STL.</div><div class="ttdef"><b>Definition</b> <a href="ArduinoReader_8h_source.html#l00008">ArduinoReader.h:8</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac43bc600fb6be8d53bf2a939389e896c" name="ac43bc600fb6be8d53bf2a939389e896c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac43bc600fb6be8d53bf2a939389e896c">&#9670;&#160;</a></span>registrarLecturaManual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNodo.html">void</a> registrarLecturaManual </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classListaGeneral.html">ListaGeneral</a> *&#160;</td>
+          <td class="paramname"><em>lista</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="main_8cpp_source.html#l00188">188</a> del archivo <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  189</span>{</div>
+<div class="line"><span class="lineno">  190</span>    <span class="keywordflow">if</span> (<a class="code hl_class" href="classNodo.html">lista</a>-&gt;estaVacia())</div>
+<div class="line"><span class="lineno">  191</span>    {</div>
+<div class="line"><span class="lineno">  192</span>        <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;[Error] No hay sensores en el sistema.&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">  193</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  194</span>    }</div>
+<div class="line"><span class="lineno">  195</span>    </div>
+<div class="line"><span class="lineno">  196</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* nombre = <a class="code hl_class" href="classNodo.html">getInput&lt;const char*&gt;</a>(<span class="stringliteral">&quot;ID: &quot;</span>);</div>
+<div class="line"><span class="lineno">  197</span>    <a class="code hl_class" href="classSensorBase.html">SensorBase</a>* <a class="code hl_class" href="classNodo.html">sensor</a> = <a class="code hl_class" href="classNodo.html">lista</a>-&gt;buscarPorNombre(nombre);</div>
+<div class="line"><span class="lineno">  198</span>    </div>
+<div class="line"><span class="lineno">  199</span>    <span class="keywordflow">if</span> (<a class="code hl_class" href="classNodo.html">sensor</a> == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  200</span>    {</div>
+<div class="line"><span class="lineno">  201</span>        <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;[Error] Sensor no encontrado.&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">  202</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  203</span>    }</div>
+<div class="line"><span class="lineno">  204</span>    </div>
+<div class="line"><span class="lineno">  205</span>    <a class="code hl_class" href="classSensorTemperatura.html">SensorTemperatura</a>* <a class="code hl_class" href="classNodo.html">sensorTemp</a> = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="classSensorTemperatura.html">SensorTemperatura</a>*<span class="keyword">&gt;</span>(<a class="code hl_class" href="classNodo.html">sensor</a>);</div>
+<div class="line"><span class="lineno">  206</span>    <span class="keywordflow">if</span> (<a class="code hl_class" href="classNodo.html">sensorTemp</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  207</span>    {</div>
+<div class="line"><span class="lineno">  208</span>        <span class="keywordtype">float</span> valor = <a class="code hl_class" href="classNodo.html">getInput&lt;float&gt;</a>(<span class="stringliteral">&quot;Valor: &quot;</span>);</div>
+<div class="line"><span class="lineno">  209</span>        <a class="code hl_class" href="classNodo.html">sensorTemp</a>-&gt;agregarLectura(valor);</div>
+<div class="line"><span class="lineno">  210</span>        <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;ID: &quot;</span> &lt;&lt; nombre &lt;&lt; <span class="stringliteral">&quot;. Valor: &quot;</span> &lt;&lt; valor &lt;&lt; <span class="stringliteral">&quot; (float)&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">  211</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  212</span>    }</div>
+<div class="line"><span class="lineno">  213</span>    </div>
+<div class="line"><span class="lineno">  214</span>    <a class="code hl_class" href="classSensorPresion.html">SensorPresion</a>* <a class="code hl_class" href="classNodo.html">sensorPres</a> = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="classSensorPresion.html">SensorPresion</a>*<span class="keyword">&gt;</span>(<a class="code hl_class" href="classNodo.html">sensor</a>);</div>
+<div class="line"><span class="lineno">  215</span>    <span class="keywordflow">if</span> (<a class="code hl_class" href="classNodo.html">sensorPres</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  216</span>    {</div>
+<div class="line"><span class="lineno">  217</span>        <span class="keywordtype">int</span> valor = <a class="code hl_class" href="classNodo.html">getInput&lt;int&gt;</a>(<span class="stringliteral">&quot;Valor: &quot;</span>);</div>
+<div class="line"><span class="lineno">  218</span>        <a class="code hl_class" href="classNodo.html">sensorPres</a>-&gt;agregarLectura(valor);</div>
+<div class="line"><span class="lineno">  219</span>        <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;ID: &quot;</span> &lt;&lt; nombre &lt;&lt; <span class="stringliteral">&quot;. Valor: &quot;</span> &lt;&lt; valor &lt;&lt; <span class="stringliteral">&quot; (int)&quot;</span> &lt;&lt; <a class="code hl_function" href="classNodo.html#a96da8b61d6884126bb04fced32542df9">std::endl</a>;</div>
+<div class="line"><span class="lineno">  220</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  221</span>    }</div>
+<div class="line"><span class="lineno">  222</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="main_8cpp.html">main.cpp</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

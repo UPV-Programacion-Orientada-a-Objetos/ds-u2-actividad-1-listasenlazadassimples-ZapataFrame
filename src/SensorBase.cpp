@@ -1,3 +1,11 @@
+/**
+ * @file SensorBase.cpp
+ * @brief Implementación de la clase base abstracta para sensores.
+ *
+ * Define el constructor, destructor y métodos auxiliares (getNombre, printNombre)
+ * que son heredados por las clases concretas de sensores.
+ */
+
 #include "SensorBase.h"
 #include <iostream>
 

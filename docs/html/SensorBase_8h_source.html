@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sistema de Gestión Polimórfica de Sensores para IoT: Archivo de código fuente include/SensorBase.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Sistema de Gestión Polimórfica de Sensores para IoT
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('SensorBase_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SensorBase.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="SensorBase_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef SENSORBASE_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define SENSORBASE_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;cstring&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classSensorBase.html">   19</a></span><span class="keyword">class </span><a class="code hl_class" href="classSensorBase.html">SensorBase</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_class" href="classSensorBase.html">SensorBase</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_class" href="classNodo.html">nom</a>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classSensorBase.html#af38b2b0e047cb4f0304fc4c204c420fa">~SensorBase</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classSensorBase.html#a7fbc0a5b444f7d16cd60ba873b8ec8e4">   37</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classSensorBase.html#a7fbc0a5b444f7d16cd60ba873b8ec8e4">procesarLectura</a>() = 0;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classSensorBase.html#a7cf3aeb12b330c500e2a5136fa020eec">   42</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classSensorBase.html#a7cf3aeb12b330c500e2a5136fa020eec">imprimirInfo</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classSensorBase.html#a7177a9145cb9c5d56bc1550f237af7bd">printNombre</a>();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="classSensorBase.html#ae96d193c623231a955756bceac482f9c">getNombre</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classSensorBase.html#a843ba88809ed7b78942a0a4b1c484cf5">   56</a></span>    <span class="keywordtype">char</span> <a class="code hl_variable" href="classSensorBase.html#a843ba88809ed7b78942a0a4b1c484cf5">nombre</a>[50]; </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
+</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassNodo_html"><div class="ttname"><a href="classNodo.html">Nodo</a></div><div class="ttdef"><b>Definition</b> <a href="Nodo_8h_source.html#l00015">Nodo.h:16</a></div></div>
+<div class="ttc" id="aclassSensorBase_html"><div class="ttname"><a href="classSensorBase.html">SensorBase</a></div><div class="ttdef"><b>Definition</b> <a href="SensorBase_8h_source.html#l00019">SensorBase.h:20</a></div></div>
+<div class="ttc" id="aclassSensorBase_html_a7177a9145cb9c5d56bc1550f237af7bd"><div class="ttname"><a href="classSensorBase.html#a7177a9145cb9c5d56bc1550f237af7bd">SensorBase::printNombre</a></div><div class="ttdeci">void printNombre()</div><div class="ttdef"><b>Definition</b> <a href="SensorBase_8cpp_source.html#l00022">SensorBase.cpp:22</a></div></div>
+<div class="ttc" id="aclassSensorBase_html_a7cf3aeb12b330c500e2a5136fa020eec"><div class="ttname"><a href="classSensorBase.html#a7cf3aeb12b330c500e2a5136fa020eec">SensorBase::imprimirInfo</a></div><div class="ttdeci">virtual void imprimirInfo() const =0</div></div>
+<div class="ttc" id="aclassSensorBase_html_a7fbc0a5b444f7d16cd60ba873b8ec8e4"><div class="ttname"><a href="classSensorBase.html#a7fbc0a5b444f7d16cd60ba873b8ec8e4">SensorBase::procesarLectura</a></div><div class="ttdeci">virtual void procesarLectura()=0</div></div>
+<div class="ttc" id="aclassSensorBase_html_a843ba88809ed7b78942a0a4b1c484cf5"><div class="ttname"><a href="classSensorBase.html#a843ba88809ed7b78942a0a4b1c484cf5">SensorBase::nombre</a></div><div class="ttdeci">char nombre[50]</div><div class="ttdef"><b>Definition</b> <a href="SensorBase_8h_source.html#l00056">SensorBase.h:56</a></div></div>
+<div class="ttc" id="aclassSensorBase_html_ae96d193c623231a955756bceac482f9c"><div class="ttname"><a href="classSensorBase.html#ae96d193c623231a955756bceac482f9c">SensorBase::getNombre</a></div><div class="ttdeci">const char * getNombre() const</div><div class="ttdef"><b>Definition</b> <a href="SensorBase_8cpp_source.html#l00026">SensorBase.cpp:26</a></div></div>
+<div class="ttc" id="aclassSensorBase_html_af38b2b0e047cb4f0304fc4c204c420fa"><div class="ttname"><a href="classSensorBase.html#af38b2b0e047cb4f0304fc4c204c420fa">SensorBase::~SensorBase</a></div><div class="ttdeci">virtual ~SensorBase()</div><div class="ttdef"><b>Definition</b> <a href="SensorBase_8cpp_source.html#l00020">SensorBase.cpp:20</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="SensorBase_8h.html">SensorBase.h</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

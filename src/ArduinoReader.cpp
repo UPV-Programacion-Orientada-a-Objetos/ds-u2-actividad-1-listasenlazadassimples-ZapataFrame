@@ -1,3 +1,12 @@
+/**
+ * @file ArduinoReader.cpp
+ * @brief Implementación de la clase de comunicación serial con Arduino.
+ *
+ * Usa POSIX termios para configurar y leer del puerto serial. Implementa
+ * apertura, configuración a 9600 baud, lectura línea por línea y cierre
+ * del puerto. Gestiona timeouts y sincronización con Arduino tras reset.
+ */
+
 #include "ArduinoReader.h"
 #include <iostream>
 #include <termios.h>

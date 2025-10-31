@@ -1,0 +1,21 @@
+<map id="include/Nodo.h" name="include/Nodo.h">
+<area shape="rect" id="Node000001" title="Nodo simple para listas enlazadas genéricas." alt="" coords="206,5,325,31"/>
+<area shape="rect" id="Node000002" href="$ListaGeneral_8h.html" title="Contenedor genérico de sensores (lista enlazada)." alt="" coords="89,79,255,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,41,189,81,186,76,238,37"/>
+<area shape="rect" id="Node000005" href="$ListaSensor_8h.html" title="Implementación de lista enlazada simple para lecturas de sensores." alt="" coords="279,79,438,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="293,37,345,76,342,81,289,41"/>
+<area shape="rect" id="Node000003" href="$ListaGeneral_8cpp.html" title="Implementación de la lista general de sensores." alt="" coords="5,152,160,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="149,115,99,154,96,150,145,110"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html" title="Programa principal del sistema IoT de monitoreo polimórfico." alt="" coords="145,225,250,251"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="179,117,198,225,193,226,174,118"/>
+<area shape="rect" id="Node000006" href="$SensorPresion_8h.html" title="Implementación de sensor de presión." alt="" coords="245,152,422,177"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="352,118,340,153,335,151,347,116"/>
+<area shape="rect" id="Node000008" href="$SensorTemperatura_8h.html" title="Implementación de sensor de temperatura." alt="" coords="447,152,657,177"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="403,106,521,149,519,154,401,111"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="301,186,221,227,218,223,298,181"/>
+<area shape="rect" id="Node000007" href="$SensorPresion_8cpp.html" title="Implementación del sensor de presión." alt="" coords="274,225,438,251"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="344,190,355,224,350,226,339,192"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="482,183,251,229,250,224,481,177"/>
+<area shape="rect" id="Node000009" href="$SensorTemperatura_8cpp.html" title="Implementación del sensor de temperatura." alt="" coords="462,225,661,251"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="558,191,562,225,557,226,553,191"/>
+</map>

@@ -1,3 +1,12 @@
+/**
+ * @file SensorTemperatura.cpp
+ * @brief Implementación del sensor de temperatura.
+ *
+ * Especializa SensorBase para manejar lecturas de tipo float. Mantiene
+ * un historial de lecturas y calcula promedios tras eliminar el valor mínimo
+ * en el método procesarLectura().
+ */
+
 #include "SensorTemperatura.h"
 #include <iostream>
 

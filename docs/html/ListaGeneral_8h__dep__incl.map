@@ -1,0 +1,7 @@
+<map id="include/ListaGeneral.h" name="include/ListaGeneral.h">
+<area shape="rect" id="Node000001" title="Contenedor genérico de sensores (lista enlazada)." alt="" coords="77,5,243,31"/>
+<area shape="rect" id="Node000002" href="$ListaGeneral_8cpp.html" title="Implementación de la lista general de sensores." alt="" coords="5,79,160,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,42,97,80,94,76,136,38"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html" title="Programa principal del sistema IoT de monitoreo polimórfico." alt="" coords="185,79,290,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="184,38,226,76,223,80,181,42"/>
+</map>

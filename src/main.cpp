@@ -1,3 +1,16 @@
+/**
+ * @file main.cpp
+ * @brief Programa principal del sistema IoT de monitoreo polimórfico.
+ *
+ * Implementa un menú interactivo para crear sensores, registrar lecturas
+ * desde Arduino o manualmente, y ejecutar procesamiento polimórfico sobre
+ * la lista de sensores. Demuestra el uso de herencia, polimorfismo y
+ * gestión dinámica de memoria.
+ *
+ * @author ZapataFrame
+ * @date 2025-10-30
+ */
+
 #include <iostream>
 #include <limits>
 #include <cstring>

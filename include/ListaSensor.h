@@ -1,6 +1,14 @@
 #ifndef LISTASENSOR_H
 #define LISTASENSOR_H
 
+/**
+ * @file ListaSensor.h
+ * @brief Implementación de lista enlazada simple para lecturas de sensores.
+ *
+ * Plantilla de lista que almacena valores de lecturas (genéricos) y ofrece
+ * operaciones comunes: insertar, eliminar, encontrar mínimo, promedio, etc.
+ */
+
 #include "Nodo.h"
 #include <iostream>
 
@@ -30,12 +38,26 @@ public:
         }
         this->cabeza = nullptr;
     }
+
+    /** Inserta un nuevo valor al final de la lista. */
     void insertar(T valor);
+
+    /** Devuelve el valor mínimo almacenado. */
     T encontrarMinimo();
+
+    /** Elimina la primera ocurrencia del valor especificado. */
     void eliminarValor(T valor);
+
+    /** Calcula el promedio de las lecturas. */
     double calcularPromedio();
+
+    /** Indica si la lista está vacía. */
     bool estaVacia();
+
+    /** Devuelve el número de elementos. */
     int numeroDeElementos();
+
+    /** Muestra la lista por salida estándar (uso de depuración). */
     void mostrarLista();
 };
 

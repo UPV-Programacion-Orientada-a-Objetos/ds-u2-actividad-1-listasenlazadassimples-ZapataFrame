@@ -1,3 +1,12 @@
+/**
+ * @file ListaGeneral.cpp
+ * @brief Implementación de la lista general de sensores.
+ *
+ * Define las operaciones de la lista enlazada que almacena sensores:
+ * inserción, recorrido polimórfico, impresión y búsqueda por nombre.
+ * El destructor libera en cascada todos los sensores y nodos.
+ */
+
 #include "ListaGeneral.h"
 #include <iostream>
 #include <cstring>

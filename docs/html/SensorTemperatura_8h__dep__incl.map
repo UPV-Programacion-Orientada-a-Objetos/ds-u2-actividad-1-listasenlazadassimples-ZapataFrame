@@ -1,0 +1,7 @@
+<map id="include/SensorTemperatura.h" name="include/SensorTemperatura.h">
+<area shape="rect" id="Node000001" title="Implementación de sensor de temperatura." alt="" coords="87,5,298,31"/>
+<area shape="rect" id="Node000002" href="$SensorTemperatura_8cpp.html" title="Implementación del sensor de temperatura." alt="" coords="5,79,204,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,41,121,81,117,76,166,37"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html" title="Programa principal del sistema IoT de monitoreo polimórfico." alt="" coords="228,79,333,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="219,37,268,76,265,81,216,41"/>
+</map>

@@ -1,3 +1,11 @@
+/**
+ * @file SensorPresion.cpp
+ * @brief Implementación del sensor de presión.
+ *
+ * Especializa SensorBase para manejar lecturas de tipo int. Mantiene un
+ * historial de lecturas y calcula el promedio en procesarLectura().
+ */
+
 #include "SensorPresion.h"
 #include <iostream>
 
