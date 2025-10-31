@@ -14,3 +14,7 @@ SensorBase::~SensorBase(){}
 void SensorBase::printNombre(){
     std::cout << this->nombre;
 }
+
+const char* SensorBase::getNombre() const {
+    return nombre;
+}

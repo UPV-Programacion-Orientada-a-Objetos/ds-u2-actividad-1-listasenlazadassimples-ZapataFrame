@@ -31,4 +31,5 @@ void SensorPresion::imprimirInfo() const
 void SensorPresion::agregarLectura(int valor)
 {
     historial.insertar(valor);
+    std::cout << "[Log] Lectura " << valor << " registrada en " << nombre << std::endl;
 }

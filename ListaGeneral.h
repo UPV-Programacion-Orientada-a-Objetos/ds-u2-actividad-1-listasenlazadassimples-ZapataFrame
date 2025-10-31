@@ -17,5 +17,6 @@ public:
     bool estaVacia();
     void procesarTodos();
     void imprimirTodos() const;
+    SensorBase* buscarPorNombre(const char* nombre);
 };
 #endif

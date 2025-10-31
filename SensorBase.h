@@ -15,6 +15,7 @@ public:
     virtual void procesarLectura() = 0;
     virtual void imprimirInfo() const = 0;
     void printNombre();
+    const char* getNombre() const;
 
 protected:
     char nombre[50];

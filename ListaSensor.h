@@ -1,3 +1,6 @@
+#ifndef LISTASENSOR_H
+#define LISTASENSOR_H
+
 #include "Nodo.h"
 #include <iostream>
 
@@ -149,3 +152,5 @@ void ListaSensor<T>::mostrarLista()
     }
     std::cout << std::endl;
 }
+
+#endif

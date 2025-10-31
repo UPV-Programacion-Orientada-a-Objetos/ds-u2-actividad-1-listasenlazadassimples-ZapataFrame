@@ -1,5 +1,6 @@
 #include "ListaGeneral.h"
 #include <iostream>
+#include <cstring>
 // implementacion
 
 ListaGeneral::~ListaGeneral()
@@ -83,4 +84,20 @@ void ListaGeneral::imprimirTodos() const
         temp = temp->siguiente;
         contador++;
     }
+}
+
+SensorBase* ListaGeneral::buscarPorNombre(const char* nombre)
+{
+    Nodo<SensorBase *> *temp = this->cabeza;
+    
+    while (temp != nullptr)
+    {
+        if (std::strcmp(temp->valor->getNombre(), nombre) == 0)
+        {
+            return temp->valor;
+        }
+        temp = temp->siguiente;
+    }
+    
+    return nullptr;
 }

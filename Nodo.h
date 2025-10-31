@@ -1,3 +1,6 @@
+#ifndef NODO_H
+#define NODO_H
+
 template <typename T>
 class Nodo
 {
@@ -12,3 +15,5 @@ public:
         this->siguiente = nullptr;
     };
 };
+
+#endif
