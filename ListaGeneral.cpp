@@ -49,18 +49,13 @@ void ListaGeneral::procesarTodos()
         return;
     }
 
-    std::cout << "\n--- Ejecutando Polimorfismo ---" << std::endl;
+    std::cout << "\n--- Procesando Sensores ---" << std::endl;
 
     Nodo<SensorBase *> *temp = this->cabeza;
     while (temp != nullptr)
     {
-        std::cout << "-> Procesando sensor ";
-        temp->valor->printNombre();
-        std::cout << std::endl;
-
         temp->valor->procesarLectura();
         temp = temp->siguiente;
-        std::cout << std::endl;
     }
 }
 

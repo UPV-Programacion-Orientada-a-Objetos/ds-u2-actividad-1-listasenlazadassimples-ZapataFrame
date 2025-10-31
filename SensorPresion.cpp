@@ -11,8 +11,8 @@ void SensorPresion::procesarLectura()
 {
     if (!historial.estaVacia())
     {
-        int promedio = historial.calcularPromedio();
-        std::cout << "[" << nombre << "] Promedio de lecturas: "
+        double promedio = historial.calcularPromedio();
+        std::cout << "[" << nombre << "] (Presion): Promedio de lecturas: "
                   << promedio << "." << std::endl;
     }
     else
