@@ -2,22 +2,28 @@
 #include <iostream>
 
 // Constructor
-SensorPresion::SensorPresion(const char *nom) : SensorBase(nom){}
+SensorPresion::SensorPresion(const char *nom) : SensorBase(nom) {}
 
 // Destructor
-SensorPresion::~SensorPresion() {}
+SensorPresion::~SensorPresion()
+{
+    std::cout << "\t[Destructor Sensor " << this->nombre << "] Liberando Lista Interna..." << std::endl;
+}
 
 void SensorPresion::procesarLectura()
 {
+    std::cout << "-> Procesando Sensor " << this->nombre << "..." << std::endl;
     if (!historial.estaVacia())
     {
         double promedio = historial.calcularPromedio();
+        int numeroElementos = historial.numeroDeElementos();
+        std::cout << "[Sensor Presion] Promedio calculado sobre " << numeroElementos << " lectura (" << promedio << ")." << std::endl;
         std::cout << "[" << nombre << "] (Presion): Promedio de lecturas: "
                   << promedio << "." << std::endl;
     }
     else
     {
-        std::cout << "[" << nombre << "] Sin lecturas" << std::endl;
+        std::cout << "[" << nombre << "] (Presion): Sin lecturas" << std::endl;
     }
 }
 
@@ -30,6 +36,6 @@ void SensorPresion::imprimirInfo() const
 
 void SensorPresion::agregarLectura(int valor)
 {
+    std::cout << "[Log] Insertando Nodo<int> en " << this->nombre << "." << std::endl;
     historial.insertar(valor);
-    std::cout << "[Log] Lectura " << valor << " registrada en " << nombre << std::endl;
 }

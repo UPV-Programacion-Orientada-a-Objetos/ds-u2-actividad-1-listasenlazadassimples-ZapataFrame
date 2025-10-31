@@ -8,10 +8,12 @@ ListaGeneral::~ListaGeneral()
     // si es null no se libera nada
     if (this->cabeza == nullptr)
         return;
+
     Nodo<SensorBase *> *temp = this->cabeza;
     while (temp != nullptr)
     {
         Nodo<SensorBase *> *aux = temp->siguiente;
+        std::cout << "[Destructor General] Liberando Nodo:" << temp->valor->getNombre() << std::endl;
         delete temp->valor;
         delete temp;
         temp = aux;
@@ -56,6 +58,7 @@ void ListaGeneral::procesarTodos()
     {
         temp->valor->procesarLectura();
         temp = temp->siguiente;
+        std::cout << std::endl;
     }
 }
 
@@ -81,10 +84,10 @@ void ListaGeneral::imprimirTodos() const
     }
 }
 
-SensorBase* ListaGeneral::buscarPorNombre(const char* nombre)
+SensorBase *ListaGeneral::buscarPorNombre(const char *nombre)
 {
     Nodo<SensorBase *> *temp = this->cabeza;
-    
+
     while (temp != nullptr)
     {
         if (std::strcmp(temp->valor->getNombre(), nombre) == 0)
@@ -93,6 +96,6 @@ SensorBase* ListaGeneral::buscarPorNombre(const char* nombre)
         }
         temp = temp->siguiente;
     }
-    
+
     return nullptr;
 }

@@ -35,6 +35,7 @@ public:
     void eliminarValor(T valor);
     double calcularPromedio();
     bool estaVacia();
+    int numeroDeElementos();
     void mostrarLista();
 };
 
@@ -136,6 +137,20 @@ template <typename T>
 bool ListaSensor<T>::estaVacia()
 {
     return cabeza == nullptr;
+}
+
+template <typename T>
+int ListaSensor<T>::numeroDeElementos()
+{
+    int contador = 0;
+    Nodo<T> *temp = this->cabeza;
+    while (temp != nullptr)
+    {
+        contador++;
+        temp = temp->siguiente;
+    }
+
+    return contador;
 }
 
 template <typename T>
